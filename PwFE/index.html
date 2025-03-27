@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>CRM Gestionale</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="container">
+    <!-- Sidebar di navigazione -->
+    <nav class="sidebar">
+      <ul>
+        <li><button data-section="aziende">Aziende</button></li>
+        <li><button data-section="contatti">Contatti</button></li>
+        <li><button data-section="tipiemail">Tipi Email</button></li>
+        <li><button data-section="tipinumeri">Tipi Numeri</button></li>
+      </ul>
+    </nav>
+
+    <!-- Contenuto principale -->
+    <main class="content">
+      <div class="header">
+        <h1 id="sectionTitle">Aziende</h1>
+        <!-- Bottone per creare nuovo elemento (Azienda o Contatto) -->
+        <button class="btn new-btn" id="newItemBtn">Nuova Azienda</button>
+      </div>
+      <div id="tableContainer"></div>
+    </main>
+  </div>
+
+  <!-- Contenitore per i pannelli modali (azienda, contatto, ecc.) -->
+  <div id="modalContainer"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
